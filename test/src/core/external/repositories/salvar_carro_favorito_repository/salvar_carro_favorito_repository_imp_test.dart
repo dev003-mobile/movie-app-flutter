@@ -12,7 +12,7 @@ void main() {
       valor: 100000
     );
   
-    final ISalvarCarroFavoritoRepository salvarCarro = SalvarCarroFavoritoRepositoryImp(SalvarCarroPorCorDataSourceLocalImp());
+    final ISalvarCarroFavoritoRepository salvarCarro = SalvarCarroFavoritoRepositoryImp(SalvarCarroFavoritoDataSourceLocalImp());
     final result = await salvarCarro(carroDTO);
     expect(result, true);
   });
@@ -24,7 +24,7 @@ void main() {
       valor: 23
     );
   
-    final ISalvarCarroFavoritoRepository salvarCarro = SalvarCarroFavoritoRepositoryImp(SalvarCarroPorCorDataSourceLocalImp());
+    final ISalvarCarroFavoritoRepository salvarCarro = SalvarCarroFavoritoRepositoryImp(SalvarCarroFavoritoDataSourceLocalImp());
     final result = await salvarCarro(carroDTO);
     expect(result, false);
   })

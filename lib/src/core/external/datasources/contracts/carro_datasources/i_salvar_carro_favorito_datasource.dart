@@ -1,5 +1,5 @@
 import '../../../../domain/entities/carro_entity.dart';
 
-abstract class ISalvarCarroPorCorDataSource {
+abstract class ISalvarCarroFavoritoDataSource {
   Future<bool> call(CarroEntity carroDTO);
 }

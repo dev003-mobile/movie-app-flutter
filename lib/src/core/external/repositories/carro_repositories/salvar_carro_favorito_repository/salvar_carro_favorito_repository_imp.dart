@@ -4,7 +4,7 @@ import '../../../datasources/contracts/carro_datasources/i_salvar_carro_favorito
 import '../../../../domain/repositories/carro_repositories/salvar_carro_favorito_repository/i_salvar_carro_favorito_repository.dart';
 
 class SalvarCarroFavoritoRepositoryImp implements ISalvarCarroFavoritoRepository {
-  final ISalvarCarroPorCorDataSource _iSalvarCarroPorCorDataSource;
+  final ISalvarCarroFavoritoDataSource _iSalvarCarroPorCorDataSource;
 
   SalvarCarroFavoritoRepositoryImp(this._iSalvarCarroPorCorDataSource);
 
